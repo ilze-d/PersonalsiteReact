@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Project from './project.css';
 
 class ProjectItem extends Component  {
     render() {
