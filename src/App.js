@@ -6,6 +6,7 @@ import {
 import Article from './Components/article';
 import Body from './Components/body';
 import Footer from './Components/footer';
+import Seed from './seed.js';
 import './App.css';
 
 class App extends Component {
@@ -15,19 +16,8 @@ class App extends Component {
             footers: []
         }
     }
-
     componentWillMount() {
-        this.setState({
-            footers: [
-                {
-                    body: 'created and designed by ilze',
-                    repository: {
-                        link: 'repository',
-                        url: 'git.com',
-                    }
-                }
-            ]
-        })
+        this.setState({ footers: Seed.footers });
     }
 
     render() {
@@ -35,7 +25,7 @@ class App extends Component {
             <HashRouter>
             <div className="App">
                 <Route exact path="/" component={Body}/>
-                <Route path="/article" component={Article}/>
+                <Route path="/article/:articleName" component={Article}/>
                 <Footer footer={this.state.footers}/>
             </div>
             </HashRouter>

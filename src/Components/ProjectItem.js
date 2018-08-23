@@ -7,7 +7,7 @@ class ProjectItem extends Component  {
             <section className="Project">
                 <h2>{this.props.project.title}</h2>
                 <p>{this.props.project.body}</p>
-                <Link to={'/article'}>article</Link>
+                {this.props.project.link ? <Link to={this.props.project.link.url}>{this.props.project.link.label}</Link> : null}
             </section>
         );
     }
