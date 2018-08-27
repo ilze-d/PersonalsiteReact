@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
-import Header from './header';
+import Header from './header/header';
 import Seed from '../seed.js';
 
 class ProjectArticle extends Component  {

@@ -1,0 +1,14 @@
+.TwoColumnSection {
+  color: black;
+  display: flex;
+  border-bottom: 1px solid gainsboro;
+  max-width: 900px;
+  padding: 40px;
+  margin: 0 auto; }
+  .TwoColumnSection .TwoColumnSection__text {
+    width: 70%; }
+  .TwoColumnSection .TwoColumnSection__links {
+    padding: 80px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2; }

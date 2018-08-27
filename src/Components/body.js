@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import Header from './header';
+import Header from './header/header';
 import Projects from './Projects';
 import LoadMore from './loadMore';
+import TwoColumnSection from './twoColumnSection/twoColumnSection';
 import Seed from '../seed.js';
 
 class Body extends Component  {    constructor(){
@@ -16,8 +17,8 @@ class Body extends Component  {    constructor(){
     componentWillMount() {
         this.setState({
             projects: Seed.projects,
-            header: Seed.header, visible:
-            Seed.visible
+            header: Seed.header,
+            visible: Seed.visible
         })
     }
 
@@ -29,6 +30,7 @@ class Body extends Component  {    constructor(){
         return (
             <div className="Body">
                 <Header header={this.state.header}/>
+                <TwoColumnSection />
                 <section className="Article content">
                     <Projects projects={this.state.projects} visible={this.state.visible}/>
                     <LoadMore loadMore={this.handleloadMore.bind(this)} projects={this.state.projects}/>

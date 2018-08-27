@@ -1,10 +1,14 @@
 import uuid from "uuid";
+import avatar from './img/avatar.jpg'
 
 export default {
     header:
         {
             title: 'Developer',
             body: 'developer portfolio',
+            image: {
+                src: avatar,
+            }
         },
     projects: [
         {

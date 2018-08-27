@@ -1,0 +1,7 @@
+.LoadMoreButton {
+  background-color: #ff9f19;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer; }

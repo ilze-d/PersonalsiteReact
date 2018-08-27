@@ -1,0 +1,10 @@
+@import "../coreStyles/all.scss";
+
+.LoadMoreButton {
+  background-color: $yellow;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}

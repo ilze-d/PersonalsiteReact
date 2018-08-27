@@ -1,0 +1,23 @@
+.Header {
+  background: #ff9f19;
+  padding: 40px; }
+  .Header__grid {
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-column-gap: 20px;
+    grid-template-rows: auto auto;
+    grid-template-areas: "image title" "image subtitle"; }
+  .Header__image {
+    grid-area: image;
+    place-self: center;
+    height: auto;
+    width: 100%;
+    border-radius: 50%; }
+  .Header__title {
+    grid-area: title;
+    margin: 0 0;
+    align-self: end; }
+  .Header__subtitle {
+    grid-area: subtitle;
+    margin: 0 0;
+    align-self: start; }

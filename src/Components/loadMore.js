@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './loadMoreButton.css';
 
 class LoadMore extends Component  {
     constructor() {
@@ -19,7 +20,7 @@ class LoadMore extends Component  {
         return (
             <div className="content">
                 {this.state.visible < this.props.projects.length &&
-                    <button onClick={this.handlesLoadMore.bind(this)}>Load more</button>
+                    <button className="LoadMoreButton" onClick={this.handlesLoadMore.bind(this)}>Load more</button>
                 }
             </div>
         );

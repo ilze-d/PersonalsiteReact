@@ -1,0 +1,18 @@
+
+@import "../../coreStyles/all.scss";
+
+.TwoColumnSection {
+  color: black;
+  display: flex;
+  border-bottom: 1px solid gainsboro;
+  @include textcontainer();
+  .TwoColumnSection__text {
+    width: 70%;
+  }
+  .TwoColumnSection__links {
+    padding: 80px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+  }
+}
