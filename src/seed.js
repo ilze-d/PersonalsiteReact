@@ -18,6 +18,20 @@ export default {
             src: lxp,
         }
     },
+    homePageIntroduction: {
+        title: 'Proffesional background',
+        text: '5 years of experience in Front End WEB development. I worked on many projects for e-commerce, corporate sites, web applications. Familiar with responsive design concepts, UX/UI design basics, accessibility basics. I am a fast learner, good team player and do my best in picking up new technologies, best practices, participating in hackathons and developer communities and sharing my knowalage with others.',
+        links: [
+            {
+                label: 'Facebook',
+                url: 'facebook',
+            },
+            {
+                label: 'linkedin',
+                url: 'linkedin',
+            }
+        ]
+    },
     projects: [
         {
             id: uuid.v4(),

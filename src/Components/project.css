@@ -4,7 +4,8 @@
   align-items: flex-start; }
   .Project__image {
     width: 200px;
-    height: auto; }
+    height: auto;
+    margin-right: 40px; }
   .Project__title {
     height: auto;
     width: 200px; }

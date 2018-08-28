@@ -8,6 +8,7 @@ import Seed from '../seed.js';
 class Body extends Component  {    constructor(){
     super();
     this.state = {
+        introduction: [],
         projects: [],
         header: [],
         visible: 2,
@@ -18,7 +19,8 @@ class Body extends Component  {    constructor(){
         this.setState({
             projects: Seed.projects,
             header: Seed.header,
-            visible: Seed.visible
+            visible: Seed.visible,
+            introduction: Seed.homePageIntroduction,
         })
     }
 
@@ -30,7 +32,7 @@ class Body extends Component  {    constructor(){
         return (
             <div className="Body">
                 <Header header={this.state.header}/>
-                <TwoColumnSection />
+                <TwoColumnSection introduction={this.state.introduction}/>
                 <section className="Article content">
                     <Projects projects={this.state.projects} visible={this.state.visible}/>
                     <LoadMore loadMore={this.handleloadMore.bind(this)} projects={this.state.projects}/>
