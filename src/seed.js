@@ -1,12 +1,13 @@
 import uuid from "uuid";
 import avatar from './img/avatar.jpg'
 import lxp from './img/lxp.jpg'
+import react from './img/react.JPG'
 
 export default {
     header:
         {
-            title: 'Developer',
-            body: 'developer portfolio',
+            title: 'Ilze Dombrovska',
+            body: 'Front-end developer and UX/|UI designer',
             image: {
                 src: avatar,
             }
@@ -24,11 +25,11 @@ export default {
         links: [
             {
                 label: 'Facebook',
-                url: 'facebook',
+                url: 'https://www.facebook.com/ilze.dombrovska.18',
             },
             {
-                label: 'linkedin',
-                url: 'linkedin',
+                label: 'Linkedin',
+                url: 'https://www.linkedin.com/in/ilze-d/',
             }
         ]
     },
@@ -57,7 +58,7 @@ export default {
                 url: '/article/react-project',
             },
             img: {
-                src: lxp,
+                src: react,
                 alt: 'image',
             }
         },
