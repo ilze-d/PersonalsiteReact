@@ -30,6 +30,9 @@ html {
     font-family: Roboto;
 }
 
+a {
+    color: orange;
+}
 .Main {
     height: 100%;
 }

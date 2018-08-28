@@ -1,0 +1,7 @@
+.Breadcrumbs {
+  background: #ebebeb;
+  padding: 10px; }
+  .Breadcrumbs__container {
+    max-width: 900px;
+    padding: 10px;
+    margin: 0 auto; }

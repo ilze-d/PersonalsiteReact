@@ -1,0 +1,11 @@
+@import "../../coreStyles/all.scss";
+
+.Breadcrumbs {
+ background: #ebebeb;
+  padding: 10px;
+  &__container {
+    max-width: 900px;
+    padding: 10px;
+    margin: 0 auto;
+  }
+}

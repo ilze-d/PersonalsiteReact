@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ProjectItem from './ProjectItem';
+import './project.css';
 
 class Projects extends Component  {
     render() {
@@ -14,6 +15,7 @@ class Projects extends Component  {
 
         return (
             <div className="Projects content">
+                <h2>Projects</h2>
                 {projectItems}
             </div>
         );

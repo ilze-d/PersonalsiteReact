@@ -1,0 +1,29 @@
+.Project {
+    margin: 60px 0;
+    display: flex;
+    align-items: flex-start;
+    &__image {
+        width: 200px;
+        height: auto;
+        margin-right: 40px;
+    }
+    &__title {
+        height: auto;
+        width: 200px;
+    }
+    &__details {
+        flex-grow: 2;
+    }
+    &__title {
+        margin: 0;
+        text-transform: uppercase;
+        width: 100%;
+    }
+    &__subTitle {
+        margin: 0;
+        font-weight: normal;
+        font-style: italic;
+        color: #5c5c5c;
+        margin-bottom: 25px;
+    }
+}

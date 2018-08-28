@@ -8,6 +8,7 @@ import Body from './Components/body';
 import Footer from './Components/footer';
 import Seed from './seed.js';
 import './App.css';
+import ProjectPage from "./ProjectPage.js";
 
 class App extends Component {
     constructor(){
@@ -25,7 +26,8 @@ class App extends Component {
             <HashRouter>
             <div className="App">
                 <Route exact path="/" component={Body}/>
-                <Route path="/article/:articleName" component={Article}/>
+                <Route exact path="/article/:articleName" component={Article}/>
+                <Route exact path="/article" component={ProjectPage}/>
                 <Footer footer={this.state.footers}/>
             </div>
             </HashRouter>
