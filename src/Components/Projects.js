@@ -15,7 +15,6 @@ class Projects extends Component  {
 
         return (
             <div className="Projects content">
-                <h2>Projects</h2>
                 {projectItems}
             </div>
         );

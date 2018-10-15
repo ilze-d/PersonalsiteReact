@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import Header from './header/header';
 import Seed from '../seed.js';
+import Breadcrumbs from './breadcrumbs/breadcrumbs.js'
+
 
 class ProjectArticle extends Component  {
     constructor(props){
@@ -23,6 +25,7 @@ class ProjectArticle extends Component  {
         return (
             <div className="Body">
                 <Header header={article.header}/>
+                <Breadcrumbs/>
                 <section className="Article content">
                     <h2>{article.header.title}</h2>
                     <p>{article.body}</p>
